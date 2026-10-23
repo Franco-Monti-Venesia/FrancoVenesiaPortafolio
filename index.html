@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Franco Venesia | Desarrollo a Medida | Portafolio</title>
+    <meta
+      name="description"
+      content="Desarrollador Full Stack en Rosario. Sitios web, tiendas online y sistemas de turnos a medida para negocios que quieren crecer. React, Node.js y bases de datos."
+    />
+    <link rel="canonical" href="https://francovenesia.vercel.app/" />
+    <meta name="theme-color" content="#060813" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Franco Venesia" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:title" content="Franco Venesia | Desarrollo a Medida | Portafolio" />
+    <meta
+      property="og:description"
+      content="Sitios web, tiendas online y sistemas de turnos a medida para negocios que quieren crecer. Desarrollo Full Stack con React, Node.js y bases de datos."
+    />
+    <meta property="og:url" content="https://francovenesia.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://francovenesia.vercel.app/assets/img/og-portafolio.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Portfolio de Franco Venesia, desarrollador Full Stack en Rosario: tu negocio merece una web profesional lista para crecer."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Franco Venesia | Desarrollo a Medida | Portafolio" />
+    <meta
+      name="twitter:description"
+      content="Sitios web, tiendas online y sistemas de turnos a medida para negocios que quieren crecer. Desarrollo Full Stack con React, Node.js y bases de datos."
+    />
+    <meta
+      name="twitter:image"
+      content="https://francovenesia.vercel.app/assets/img/og-portafolio.jpg"
+    />
+    <link rel="icon" type="image/png" href="assets/img/favicon-PortafolioFranco.png" />
+    <link rel="apple-touch-icon" href="assets/img/favicon-PortafolioFranco.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Aplica el tema guardado antes de pintar (evita el parpadeo) -->
+    <script src="js/theme-init.js"></script>
+    <!-- Estilos (el orden importa: de tokens a secciones y al final lo responsive) -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/sections/hero.css" />
+    <link rel="stylesheet" href="css/sections/about.css" />
+    <link rel="stylesheet" href="css/sections/services.css" />
+    <link rel="stylesheet" href="css/sections/methodology.css" />
+    <link rel="stylesheet" href="css/sections/projects.css" />
+    <link rel="stylesheet" href="css/sections/skills.css" />
+    <link rel="stylesheet" href="css/sections/certificates.css" />
+    <link rel="stylesheet" href="css/sections/contact.css" />
+    <link rel="stylesheet" href="css/sections/footer.css" />
+    <link rel="stylesheet" href="css/theme-light.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+    <canvas id="fx" aria-hidden="true"></canvas>
+
+    <nav class="glass">
+      <a href="#inicio" class="logo">&lt;Franco<b>Venesia</b>/&gt;</a>
+      <ul class="links" id="links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#certificados">Certificados</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="act">
+        <button class="ib" id="lg" type="button">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"
+            />
+          </svg></button
+        ><button class="ib" id="th" type="button" aria-label="Modo claro"></button
+        ><button
+          class="burger"
+          id="burger"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="links"
+        >
+          ☰
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <header class="hero" id="inicio">
+        <div class="wrap hero-grid">
+          <div>
+            <div class="badge glass">
+              <span></span>Disponible para proyectos y propuestas laborales
+            </div>
+            <h1>
+              Tu negocio merece <br class="br" /><span class="grad">una web profesional</span>
+              <br class="br" />lista para crecer.
+            </h1>
+            <p class="type">
+              <span class="gh" id="gh" aria-hidden="true"></span
+              ><span class="lv"
+                >Desarrollador Full Stack en Rosario. <b id="typed"></b><i></i
+              ></span>
+            </p>
+            <div class="cta">
+              <a class="btn main" href="#contacto">Empezá tu proyecto</a>
+              <a class="btn" href="#proyectos">Ver proyectos</a>
+              <a class="btn" href="assets/img/FrancoVenesia_CV.pdf" download>Descargar CV</a>
+            </div>
+            <div class="stats">
+              <div><strong>4 días</strong>a 2 semanas de entrega</div>
+              <div><strong>Full Stack</strong>Carrera Front End y Back End</div>
+              <div><strong>Rosario</strong>trabajo remoto o presencial</div>
+            </div>
+          </div>
+          <div class="glass photo">
+            <img
+              src="assets/img/fotoperfil traje.webp"
+              alt="Foto de Franco Venesia"
+              onerror="this.outerHTML='<div class=ph>Tu foto acá</div>'"
+            />
+            <div class="orbs" id="orbs" aria-hidden="true"></div>
+          </div>
+        </div>
+      </header>
+
+      <section id="sobre-mi">
+        <div class="wrap">
+          <div class="sec-h rv"><h2>Diseño y código con foco en resultados</h2></div>
+          <div class="about rv">
+            <div class="glass">
+              <p>
+                Soy desarrollador Full Stack, detallista y apasionado por el diseño visual.
+                Transformo ideas en experiencias digitales rápidas, atractivas y fáciles de usar.
+              </p>
+              <p>
+                Me especializo en sitios para negocios locales: que se vean profesionales, carguen
+                rápido y hagan que te contacten.
+              </p>
+              <p>
+                Trabajo de forma directa y cercana: te explico cada paso sin tecnicismos, cumplo los
+                plazos y te acompaño después de la entrega.
+              </p>
+              <p class="gl">Formación</p>
+              <ul class="edu">
+                <li>Técnico en Informática · IPETYM N°59 (2017–2023)</li>
+                <li>Carrera de Desarrollo Frontend · Coderhouse (2024–2025)</li>
+                <li>Carrera de Desarrollo Backend · Coderhouse (2025–2026)</li>
+                <li>Carrera de Desarrollo Full Stack · Coderhouse (2024–2026)</li>
+              </ul>
+            </div>
+            <div class="glass">
+              <p>
+                Desde que empecé no paré de aprender y pulir mi oficio: frontend con React, backend
+                con Node y bases de datos SQL. Me adapto a lo que el proyecto necesite.
+              </p>
+              <div id="skillsAbout"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios">
+        <div class="wrap">
+          <div class="sec-h rv">
+            <h2>Servicios</h2>
+            <p>Todo lo que tu negocio necesita para tener presencia web, sin vueltas.</p>
+          </div>
+          <div class="glass note rv">
+            <span class="ico">✨</span>
+            <p>
+              <b>100% personalizables.</b> Cada servicio se adapta a tu negocio, tu rubro y tu
+              presupuesto. Si lo que necesitás no está acá, lo armamos juntos.
+            </p>
+          </div>
+          <div class="svc rv" id="svc">
+            <div class="tabs" id="tabs" role="tablist"></div>
+            <article class="glass pnl" id="pnl" role="tabpanel"></article>
+          </div>
+          <div class="meth">
+            <div class="sec-h center rv">
+              <h3>Metodología de trabajo</h3>
+              <p>Un proceso claro para llevar tu idea desde el concepto hasta el lanzamiento.</p>
+            </div>
+            <div class="tlw">
+              <ol class="tl" id="tl">
+                <li class="step">
+                  <div class="glass card rv l">
+                    <span class="n">01</span>
+                    <div class="ico">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="11" cy="11" r="6.5" />
+                        <path d="m20 20-4.2-4.2M8.5 11h5M11 8.5v5" />
+                      </svg>
+                    </div>
+                    <h4>Charla y descubrimiento</h4>
+                    <p>
+                      Entiendo tu negocio, tus objetivos y a tus clientes. Definimos alcance,
+                      prioridades y plazos.
+                    </p>
+                  </div>
+                </li>
+                <li class="step">
+                  <div class="glass card rv r">
+                    <span class="n">02</span>
+                    <div class="ico">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect x="3" y="4" width="18" height="14" rx="2.5" />
+                        <path d="M3 9h18M8 21h8M12 18v3" />
+                      </svg>
+                    </div>
+                    <h4>Demo y diseño</h4>
+                    <p>
+                      Te muestro cómo quedaría antes de escribir el código final, para evitar
+                      sorpresas. Ajustamos juntos.
+                    </p>
+                  </div>
+                </li>
+                <li class="step">
+                  <div class="glass card rv l">
+                    <span class="n">03</span>
+                    <div class="ico">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m8 8-4.5 4L8 16M16 8l4.5 4L16 16M13.5 5 10.5 19" />
+                      </svg>
+                    </div>
+                    <h4>Desarrollo</h4>
+                    <p>
+                      Lo construyo en un plazo de 4 días a 2 semanas, según el proyecto, con código
+                      limpio y avances parciales para que veas cómo va quedando.
+                    </p>
+                  </div>
+                </li>
+                <li class="step">
+                  <div class="glass card rv r">
+                    <span class="n">04</span>
+                    <div class="ico">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M12 3c3.5 2 5 5.5 4.5 9.5L12 17l-4.5-4.5C7 8.5 8.500 5 12 3Z" />
+                        <circle cx="12" cy="9.500" r="1.600" />
+                        <path
+                          d="M7.500 13.500 5 15l.5 3.500L9 17M16.500 13.500 19 15l-.5 3.500L15 17"
+                        />
+                      </svg>
+                    </div>
+                    <h4>Entrega y soporte</h4>
+                    <p>
+                      Publicamos tu sitio y te acompaño después: ajustes, consultas y mantenimiento
+                      mensual si lo necesitás.
+                    </p>
+                  </div>
+                </li>
+              </ol>
+              <div class="rider" id="rider" aria-hidden="true">
+                <em>&lt;</em>F<em>.</em><b>V</b><em>&gt;</em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos">
+        <div class="wrap">
+          <div class="sec-h rv">
+            <h2>Proyectos</h2>
+            <p>Sitios reales y demos para negocios de salud y belleza.</p>
+          </div>
+          <div class="projects">
+            <article class="glass proj rv">
+              <div class="th">
+                <img
+                  src="assets/img/Pasos de acero landing.png"
+                  alt="Landing de Pasos de Acero"
+                  onerror="this.remove()"
+                />Captura de la demo
+              </div>
+              <div class="bd">
+                <span class="kind d">Demo</span>
+                <h3>Pasos de Acero · Landing</h3>
+                <p>
+                  Landing para un centro de estética: calificación de Google animada, catálogo de
+                  servicios con pestañas, testimonios, mapa y botón flotante de WhatsApp.
+                </p>
+                <div class="stack">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vercel</span>
+                </div>
+                <div class="plinks">
+                  <a
+                    href="https://pasos-de-acero-demo-basica.vercel.app"
+                    target="_blank"
+                    rel="noopener"
+                    >Ver demo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="glass proj rv">
+              <div class="th">
+                <img
+                  src="assets/img/Parrucchiere turnos.png"
+                  alt="Turnero de Parrucchiere"
+                  onerror="this.remove()"
+                />Captura de la demo
+              </div>
+              <div class="bd">
+                <span class="kind d">Demo</span>
+                <h3>Parrucchiere · Turnero y panel admin</h3>
+                <p>
+                  Sistema de turnos con calendario, disponibilidad en tiempo real y panel de
+                  administración para confirmar o rechazar reservas por WhatsApp.
+                </p>
+                <div class="stack">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span><span>WhatsApp</span
+                  ><span>Vercel</span>
+                </div>
+                <div class="plinks">
+                  <a href="https://parrucchiere-demo.vercel.app" target="_blank" rel="noopener"
+                    >Ver demo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="glass proj rv">
+              <div class="th">
+                <img
+                  src="assets/img/e-commerce gerardino pastas.webp"
+                  alt="E-commerce Gerardino Pastas"
+                  onerror="this.remove()"
+                />E-commerce
+              </div>
+              <div class="bd">
+                <span class="kind">Proyecto de cursada</span>
+                <h3>E-commerce Gerardino Pastas</h3>
+                <p>
+                  Proyecto de cursada: tienda online de pastas artesanales (negocio ficticio) con
+                  categorías, carrito, checkout personalizado y confirmación por email automático.
+                </p>
+                <div class="stack">
+                  <span>React</span><span>JavaScript</span><span>HTML</span><span>CSS</span
+                  ><span>Firebase</span><span>Bootstrap</span>
+                </div>
+                <div class="plinks">
+                  <a
+                    href="https://ecommercegerardinopastas.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Ver sitio</a
+                  ><a
+                    href="https://github.com/Franco-Monti-Venesia/E-commerce-Gerardino-Pastas.git"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="glass proj rv">
+              <div class="th">
+                <img
+                  src="assets/img/gastos del mes.webp"
+                  alt="App de control de gastos"
+                  onerror="this.remove()"
+                />App web
+              </div>
+              <div class="bd">
+                <span class="kind">Proyecto de cursada</span>
+                <h3>Control de gastos personales</h3>
+                <p>
+                  Proyecto de cursada: app para registrar ingresos y egresos, filtrar por categoría,
+                  editar operaciones y ver el balance actualizado en tiempo real.
+                </p>
+                <div class="stack">
+                  <span>JavaScript</span><span>HTML</span><span>CSS</span><span>Tailwind CSS</span>
+                </div>
+                <div class="plinks">
+                  <a
+                    href="https://franco-monti-venesia.github.io/Gastos-del-Mes-Proyecto/"
+                    target="_blank"
+                    rel="noopener"
+                    >Ver app</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades">
+        <div class="wrap">
+          <div class="sec-h rv"><h2>Habilidades</h2></div>
+          <div class="marq rv"><div class="track" id="track"></div></div>
+        </div>
+      </section>
+
+      <section id="certificados">
+        <div class="wrap">
+          <div class="sec-h rv"><h2>Certificados</h2></div>
+          <div class="certs rv" id="certs"></div>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <div class="wrap contact">
+          <div class="rv">
+            <h2>¿Tenés un proyecto en mente?</h2>
+            <p>Contame sobre tu negocio y te respondo con una propuesta en 24 horas.</p>
+            <div class="lks">
+              <button class="glass lk" type="button" id="cpmail">
+                <span class="ic"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="26"
+                    height="26"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="3" y="5" width="18" height="14" rx="3" />
+                    <path d="m3.5 7 8.5 6 8.5-6" /></svg></span
+                ><span><b>Email</b><small id="cpsm">francovenesia05@gmail.com</small></span
+                ><span class="go"
+                  ><svg
+                    class="cpi"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="9" y="9" width="12" height="12" rx="2" />
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" /></svg
+                  ><svg
+                    class="chk"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m5 12.5 4.5 4.5L19 7" /></svg
+                ></span>
+              </button>
+              <a
+                class="glass lk"
+                href="https://github.com/Franco-Monti-Venesia"
+                target="_blank"
+                rel="noopener"
+                ><span class="ic"
+                  ><svg>
+                    viewBox="0 0 24 24"
+                    width="26"
+                    height="26"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    /></svg></span
+                ><span><b>GitHub</b><small>@Franco-Monti-Venesia</small></span
+                ><span class="go"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 17 17 7M8 7h9v9" /></svg></span
+              ></a>
+              <a
+                class="glass lk"
+                href="https://www.linkedin.com/in/franco-monti-venesia-fullstack/"
+                target="_blank"
+                rel="noopener"
+                ><span class="ic"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="26"
+                    height="26"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" /></svg></span
+                ><span><b>LinkedIn</b><small>franco-monti-venesia-fullstack</small></span
+                ><span class="go"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 17 17 7M8 7h9v9" /></svg></span
+              ></a>
+            </div>
+          </div>
+          <form class="glass rv" id="form">
+            <label for="n">Nombre</label><input id="n" required autocomplete="name" />
+            <label for="e">Correo electrónico</label
+            ><input id="e" type="email" required autocomplete="email" />
+            <label for="m">Mensaje</label><textarea id="m" required></textarea>
+            <input
+              type="text"
+              id="hp"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+              style="
+                position: absolute;
+                left: -9999px;
+                opacity: 0;
+                height: 0;
+                padding: 0;
+                border: 0;
+                margin: 0;
+              "
+            />
+            <button class="btn main" type="submit">Enviar mensaje</button>
+            <p class="fstat" id="fstat" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="ft">
+      <div class="wrap">
+        <div class="ft-grid">
+          <div class="ft-brand">
+            <a class="logo" href="#inicio">&lt;Franco<b>Venesia</b>/&gt;</a>
+            <p>
+              Sitios web, tiendas online y sistemas de turnos a medida, para que tu negocio crezca.
+            </p>
+            <div class="soc">
+              <a
+                href="https://github.com/Franco-Monti-Venesia"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+                ><svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  /></svg></a
+              ><a
+                href="https://www.linkedin.com/in/franco-monti-venesia-fullstack/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+                ><svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" /></svg
+              ></a>
+            </div>
+          </div>
+          <nav class="ft-col">
+            <h4>Navegación</h4>
+            <a href="#inicio">Inicio</a><a href="#sobre-mi">Sobre mí</a
+            ><a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a
+            ><a href="#habilidades">Habilidades</a><a href="#certificados">Certificados</a
+            ><a href="#contacto">Contacto</a>
+          </nav>
+          <div class="ft-col">
+            <h4>Contacto</h4>
+            <a href="mailto:francovenesia05@gmail.com">francovenesia05@gmail.com</a
+            ><span>Rosario, Argentina</span>
+          </div>
+        </div>
+        <div class="ft-bot">© 2026 Franco Venesia. Todos los derechos reservados.</div>
+      </div>
+      <div class="wm" aria-hidden="true">Franco Venesia</div>
+    </footer>
+    <button class="totop" id="totop" type="button" aria-label="Volver arriba">
+      <svg
+        viewBox="0 0 24 24"
+        width="20"
+        height="20"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="m6 15 6-6 6 6" />
+      </svg>
+    </button>
+
+    <!-- Scripts (scripts clásicos con defer: se ejecutan en orden y comparten el ámbito global) -->
+    <script defer src="js/config.js"></script>
+    <script defer src="js/data/skills.js"></script>
+    <script defer src="js/data/certificates.js"></script>
+    <script defer src="js/data/translations.js"></script>
+    <script defer src="js/data/services.js"></script>
+    <script defer src="js/i18n.js"></script>
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/skills.js"></script>
+    <script defer src="js/certificates.js"></script>
+    <script defer src="js/services.js"></script>
+    <script defer src="js/theme-language.js"></script>
+    <script defer src="js/typing.js"></script>
+    <script defer src="js/methodology.js"></script>
+    <script defer src="js/tool-orbs.js"></script>
+    <script defer src="js/contact.js"></script>
+    <script defer src="js/ui-effects.js"></script>
+    <script defer src="js/contact-form.js"></script>
+    <script defer src="js/particles.js"></script>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>

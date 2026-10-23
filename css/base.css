@@ -1,0 +1,149 @@
+/* Reset, tipografía, fondo animado, layout, vidrio (glassmorphism) y animaciones de entrada. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 0;
+  overflow-x: clip;
+}
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font:
+    400 1rem/1.65 Manrope,
+    system-ui,
+    sans-serif;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+:focus-visible {
+  outline: 2px solid var(--c);
+  outline-offset: 3px;
+}
+.aurora {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+.aurora i {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.5;
+  animation: drift 22s ease-in-out infinite alternate;
+}
+.aurora i:nth-child(1) {
+  width: 55vw;
+  height: 55vw;
+  background: var(--v);
+  top: -18%;
+  left: -10%;
+}
+.aurora i:nth-child(2) {
+  width: 46vw;
+  height: 46vw;
+  background: var(--c);
+  top: 20%;
+  right: -14%;
+  animation-duration: 28s;
+  opacity: 0.32;
+}
+.aurora i:nth-child(3) {
+  width: 40vw;
+  height: 40vw;
+  background: var(--p);
+  bottom: -18%;
+  left: 25%;
+  animation-duration: 25s;
+  opacity: 0.28;
+}
+#fx {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+section {
+  padding: 94px 0 30px;
+}
+.sec-h {
+  margin-bottom: 46px;
+  max-width: 620px;
+}
+.sec-h h2 {
+  font-size: clamp(2rem, 4.6vw, 3.2rem);
+  font-weight: 800;
+}
+.sec-h p {
+  color: var(--mut);
+  margin-top: 14px;
+}
+.glass {
+  background: var(--glass);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  position: relative;
+  overflow: hidden;
+}
+.glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    420px circle at var(--mx, 50%) var(--my, 0%),
+    rgba(139, 108, 255, 0.22),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.35s;
+  pointer-events: none;
+}
+.glass:hover::before {
+  opacity: 1;
+}
+h1 {
+  font-size: clamp(2.1rem, 4.5vw, 3.6rem);
+  font-weight: 800;
+}
+.rv {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.8s,
+    transform 0.8s;
+}
+.rv.in {
+  opacity: 1;
+  transform: none;
+}
+.rv.l {
+  transform: translateX(-34px);
+}
+.rv.r {
+  transform: translateX(34px);
+}
+.rv.l.in,
+.rv.r.in {
+  transform: none;
+}

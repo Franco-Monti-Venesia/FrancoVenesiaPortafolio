@@ -1,0 +1,123 @@
+/* Barra de navegación, botones de idioma/tema y sus tooltips. */
+nav.glass {
+  position: fixed;
+  overflow: visible;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  width: min(920px, calc(100% - 24px));
+  padding: 10px 14px 10px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 999px;
+}
+.logo {
+  font-family: 'Bricolage Grotesque';
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+.logo b {
+  color: var(--c);
+}
+.links {
+  display: flex;
+  gap: 6px;
+  list-style: none;
+}
+.links a {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--mut);
+  transition: 0.25s;
+}
+.links a:hover {
+  color: var(--ink);
+  background: var(--fill);
+}
+.burger {
+  display: none;
+  background: none;
+  border: 0;
+  color: var(--ink);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.act {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.ib {
+  height: 40px;
+  min-width: 40px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--glass);
+  color: var(--ink);
+  font:
+    600 0.8rem Manrope,
+    sans-serif;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: 0.25s;
+}
+.ib:hover {
+  background: var(--hov);
+  transform: translateY(-2px);
+}
+.ib {
+  position: relative;
+}
+.ib[data-tip]::after {
+  content: attr(data-tip);
+  position: absolute;
+  top: calc(100% + 13px);
+  left: 50%;
+  transform: translate(-50%, 6px);
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: #2b2552;
+  color: #fff;
+  font:
+    600 0.82rem/1.2 Manrope,
+    sans-serif;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+.ib[data-tip]::before {
+  content: '';
+  position: absolute;
+  top: calc(100% + 7px);
+  left: 50%;
+  transform: translate(-50%, 6px);
+  border: 6px solid transparent;
+  border-top: 0;
+  border-bottom-color: #2b2552;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
+}
+.ib[data-tip]:focus-visible::after,
+.ib[data-tip]:focus-visible::before {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+@media (hover: hover) {
+  .ib[data-tip]:hover::after,
+  .ib[data-tip]:hover::before {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}

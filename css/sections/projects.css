@@ -1,0 +1,62 @@
+/* Sección "Proyectos": tarjetas de demos y proyectos. */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+.proj {
+  display: flex;
+  flex-direction: column;
+}
+.proj .th {
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1b1442, #0d3447);
+  display: grid;
+  place-items: center;
+  color: var(--mut);
+  font-size: 0.9rem;
+  position: relative;
+}
+.proj .th img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s;
+}
+.proj:hover .th img {
+  transform: scale(1.06);
+}
+.proj .bd {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+.proj h3 {
+  font-size: 1.35rem;
+}
+.proj p {
+  color: var(--mut);
+  font-size: 0.93rem;
+  flex: 1;
+}
+.plinks {
+  display: flex;
+  gap: 18px;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.plinks a {
+  color: var(--c);
+  transition: 0.2s;
+}
+.plinks a:hover {
+  color: var(--ink);
+}
+.proj .th img {
+  object-position: top;
+}

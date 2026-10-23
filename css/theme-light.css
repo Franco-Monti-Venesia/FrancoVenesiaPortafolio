@@ -1,0 +1,10 @@
+/* Ajustes específicos del modo claro. */
+[data-theme='light'] .aurora {
+  opacity: 0.5;
+}
+[data-theme='light'] .btn.main {
+  color: #fff;
+}
+[data-theme='light'] .proj .th {
+  color: #d5d9f5;
+}

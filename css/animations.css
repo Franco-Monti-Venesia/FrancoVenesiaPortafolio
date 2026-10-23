@@ -1,0 +1,32 @@
+/* Definición de @keyframes. */
+@keyframes drift {
+  to {
+    transform: translate(8vw, 6vh) scale(1.18) rotate(25deg);
+  }
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+@keyframes float {
+  50% {
+    transform: translateY(-14px);
+  }
+}
+@keyframes mq {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes swap {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

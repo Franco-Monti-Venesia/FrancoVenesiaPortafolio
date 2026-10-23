@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://francovenesia.vercel.app/sitemap.xml

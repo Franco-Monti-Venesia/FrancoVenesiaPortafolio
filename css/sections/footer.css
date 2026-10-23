@@ -1,0 +1,109 @@
+/* Footer, marca de agua y botón de volver arriba. */
+footer.ft {
+  position: relative;
+  margin-top: 120px;
+  padding: 84px 0 0;
+  background: #0a0c1a;
+  color: #e8eaff;
+  border-radius: 40px 40px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  text-align: left;
+}
+.ft-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 48px;
+}
+.ft .logo {
+  font-size: 1.3rem;
+  color: #fff;
+}
+.ft-brand p {
+  color: #9aa0c3;
+  max-width: 22em;
+  margin: 18px 0 22px;
+}
+.soc {
+  display: flex;
+  gap: 12px;
+}
+.soc a {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  color: #e8eaff;
+  transition: 0.25s;
+}
+.soc a:hover {
+  background: var(--v);
+  transform: translateY(-3px);
+}
+.ft-col h4 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+  color: #fff;
+}
+.ft-col a,
+.ft-col span {
+  display: block;
+  padding: 7px 0;
+  color: #9aa0c3;
+  transition: 0.2s;
+}
+.ft-col a:hover {
+  color: var(--c);
+  transform: translateX(3px);
+}
+.ft-bot {
+  margin-top: 56px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: right;
+  color: #9aa0c3;
+  font-size: 0.9rem;
+}
+.wm {
+  font:
+    800 clamp(3rem, 12.2vw, 12rem) / 0.82 'Bricolage Grotesque',
+    sans-serif;
+  letter-spacing: -0.03em;
+  color: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  white-space: nowrap;
+  margin: 8px 0 -0.12em;
+  user-select: none;
+  pointer-events: none;
+}
+.totop {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 60;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--pop);
+  color: var(--ink);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: 0.3s;
+}
+.totop.show {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+.totop:hover {
+  background: var(--v);
+  color: #fff;
+}

@@ -1,0 +1,22 @@
+/* Sección "Habilidades": carrusel infinito. */
+.marq {
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+.track {
+  display: flex;
+  gap: 14px;
+  width: max-content;
+  animation: mq 34s linear infinite;
+}
+.marq:hover .track {
+  animation-play-state: paused;
+}
+.track span {
+  padding: 14px 26px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--glass);
+  font-weight: 600;
+  white-space: nowrap;
+}

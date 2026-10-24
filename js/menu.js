@@ -23,5 +23,5 @@ addEventListener('keydown', (e) => {
   if (e.key === 'Escape') setMenu(false);
 });
 addEventListener('resize', () => {
-  if (innerWidth > 900) setMenu(false);
+  if (innerWidth > 960) setMenu(false);
 });

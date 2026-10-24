@@ -32,6 +32,7 @@ nav.glass {
   font-size: 0.9rem;
   color: var(--mut);
   transition: 0.25s;
+  white-space: nowrap;
 }
 .links a:hover {
   color: var(--ink);

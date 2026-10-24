@@ -20,24 +20,8 @@
     max-width: 1280px;
   }
 }
-@media (max-width: 900px) {
-  .hero-grid {
-    gap: 36px;
-  }
-  .hero-grid,
-  .about,
-  .contact,
-  .projects {
-    grid-template-columns: 1fr;
-  }
-  .hero {
-    padding: 120px 0 60px;
-    min-height: auto;
-  }
-  .photo {
-    max-width: 320px;
-    order: -1;
-  }
+/* Navegación: pasa a menú hamburguesa antes de que los links dejen de entrar */
+@media (max-width: 960px) {
   .links {
     display: none;
     position: absolute;
@@ -64,6 +48,25 @@
     width: 42px;
     height: 42px;
     border-radius: 50%;
+  }
+}
+@media (max-width: 900px) {
+  .hero-grid {
+    gap: 36px;
+  }
+  .hero-grid,
+  .about,
+  .contact,
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 120px 0 60px;
+    min-height: auto;
+  }
+  .photo {
+    max-width: 320px;
+    order: -1;
   }
   section {
     padding: 84px 0 20px;

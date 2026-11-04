@@ -178,3 +178,48 @@
   border: 1px solid var(--line);
   font-size: 0.82rem;
 }
+/* Columna izquierda: pestañas + tarjeta de enfoque */
+.svc-left {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+  position: sticky;
+  top: 96px;
+}
+.focus {
+  padding: 24px;
+  border-radius: 20px;
+}
+.focus-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.focus-ico {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid rgba(45, 212, 255, 0.4);
+  background: rgba(45, 212, 255, 0.1);
+  color: var(--c);
+}
+.focus-eye {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--c);
+}
+.focus h4 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+.focus p {
+  font-size: 0.93rem;
+  line-height: 1.65;
+  color: var(--mut);
+}

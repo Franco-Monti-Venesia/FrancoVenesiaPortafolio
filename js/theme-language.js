@@ -45,6 +45,9 @@ function setLang(l) {
     (l === 'es' ? 'Desarrollador Full Stack en Rosario. ' : 'Full Stack Developer in Rosario. ') +
     WD[l].reduce((a, b) => (a.length >= b.length ? a : b));
   tr(document.body);
+  Object.entries(PLACEHOLDERS).forEach(([id, p]) => {
+    document.getElementById(id).placeholder = p[l === 'es' ? 0 : 1];
+  });
   renderSkills();
   renderTabs();
   renderPnl();

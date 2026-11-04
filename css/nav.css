@@ -27,12 +27,12 @@ nav.glass {
   list-style: none;
 }
 .links a {
-  padding: 8px 14px;
+  white-space: nowrap;
+  padding: 8px 12px;
   border-radius: 999px;
   font-size: 0.9rem;
   color: var(--mut);
   transition: 0.25s;
-  white-space: nowrap;
 }
 .links a:hover {
   color: var(--ink);

@@ -22,8 +22,11 @@
   margin-top: 22px;
 }
 .about .gl {
-  color: var(--ink);
-  margin-top: 22px;
+  margin-top: 26px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--c);
 }
 .edu {
   list-style: none;
@@ -34,4 +37,55 @@
 .edu li {
   padding: 9px 0;
   border-top: 1px solid var(--line);
+}
+/* Herramientas / habilidades: chips cuadrados con punto de color de la marca y hover llamativo */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 12px;
+}
+.tags span {
+  --bc: var(--c);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 13px 8px 11px;
+  border-radius: 9px;
+  border: 1px solid color-mix(in srgb, var(--bc) 40%, transparent);
+  background: color-mix(in srgb, var(--bc) 9%, transparent);
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: default;
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s,
+    background 0.25s,
+    border-color 0.25s,
+    color 0.25s;
+}
+.tags span::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--bc);
+  box-shadow: 0 0 8px var(--bc);
+  transition: 0.25s;
+}
+.tags span:hover {
+  transform: translateY(-4px) scale(1.05);
+  border-color: transparent;
+  background: linear-gradient(120deg, var(--v), var(--c));
+  color: #fff;
+  box-shadow: 0 10px 26px -6px rgba(45, 212, 255, 0.6);
+}
+.tags span:hover::before {
+  background: #fff;
+  box-shadow: 0 0 10px #fff;
+}
+.about .rv.in .tags span {
+  animation: chipin 0.5s cubic-bezier(0.2, 1.25, 0.35, 1) backwards;
+  animation-delay: calc(var(--i, 0) * 40ms + 0.3s);
 }

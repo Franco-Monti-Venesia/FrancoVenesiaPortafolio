@@ -1,62 +1,164 @@
-/* Sección "Proyectos": tarjetas de demos y proyectos. */
+/* Sección "Proyectos": fichas con captura en marco de navegador y descripción detallada. */
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
+  gap: 28px;
 }
 .proj {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+}
+.proj:nth-child(even) {
+  grid-template-columns: 1fr 1.2fr;
+}
+.proj:nth-child(even) .pv {
+  order: 2;
+  border-right: 0;
+  border-left: 1px solid var(--line);
+}
+.pv {
   display: flex;
   flex-direction: column;
+  background: #06101c;
+  border-right: 1px solid var(--line);
 }
-.proj .th {
-  aspect-ratio: 16/10;
+.pbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 18px;
+  background: rgba(0, 0, 0, 0.35);
+  border-bottom: 1px solid var(--line);
+}
+.pbar i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+.pbar i:last-of-type {
+  background: var(--c);
+  box-shadow: 0 0 8px var(--c);
+}
+.pbar span {
+  margin-left: auto;
+  font:
+    0.75rem ui-monospace,
+    Menlo,
+    Consolas,
+    monospace;
+  color: #9aa0c3;
+}
+.pshot {
+  position: relative;
+  flex: 1;
+  min-height: 280px;
   overflow: hidden;
   background: linear-gradient(135deg, #1b1442, #0d3447);
-  display: grid;
-  place-items: center;
-  color: var(--mut);
-  font-size: 0.9rem;
-  position: relative;
 }
-.proj .th img {
+.pshot img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s;
+  object-position: top;
+  transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
-.proj:hover .th img {
-  transform: scale(1.06);
+.proj:hover .pshot img {
+  transform: scale(1.05);
 }
-.proj .bd {
-  padding: 26px;
+.pbody {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  flex: 1;
+  gap: 14px;
+  padding: 34px 36px;
 }
-.proj h3 {
-  font-size: 1.35rem;
-}
-.proj p {
-  color: var(--mut);
-  font-size: 0.93rem;
-  flex: 1;
-}
-.plinks {
+.ptop {
   display: flex;
-  gap: 18px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.peye {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c);
+}
+.pst {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.76rem;
   font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mut);
+}
+.pst i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #37f0a0;
+  box-shadow: 0 0 10px #37f0a0;
+}
+.pbody h3 {
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  font-weight: 800;
+}
+.psub {
+  margin-top: -8px;
+  font-weight: 600;
+  color: var(--mut);
+}
+.pdesc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--mut);
+}
+.pfeat {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 22px;
   font-size: 0.92rem;
 }
-.plinks a {
-  color: var(--c);
-  transition: 0.2s;
+.pfeat li {
+  position: relative;
+  padding-left: 20px;
 }
-.plinks a:hover {
+.pfeat li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--c);
+}
+.pbody .stack span {
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(45, 212, 255, 0.06);
   color: var(--ink);
+  font:
+    600 0.78rem ui-monospace,
+    Menlo,
+    Consolas,
+    monospace;
 }
-.proj .th img {
-  object-position: top;
+.pbtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 6px;
+}
+.pbtns .btn {
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-size: 0.95rem;
 }

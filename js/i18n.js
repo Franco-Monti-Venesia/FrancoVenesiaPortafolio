@@ -6,7 +6,7 @@ const orig = new Map();
 function tr(root) {
   const wk = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
     acceptNode: (n) =>
-      n.parentElement.closest('script,style,#typed,#gh,#svc,#skillsAbout,#track,#certs')
+      n.parentElement.closest('script,style,#typed,#gh,#tabs,#pnl,#skillsAbout,#toolsTrack,#certs')
         ? NodeFilter.FILTER_REJECT
         : NodeFilter.FILTER_ACCEPT,
   });

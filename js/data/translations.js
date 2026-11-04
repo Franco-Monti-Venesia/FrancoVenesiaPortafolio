@@ -21,7 +21,7 @@ const EN = {
   'Sobre mí': 'About',
   Servicios: 'Services',
   Proyectos: 'Projects',
-  Habilidades: 'Skills',
+  Herramientas: 'Tools',
   Certificados: 'Certificates',
   Contacto: 'Contact',
   Inicio: 'Home',
@@ -104,4 +104,44 @@ const EN = {
   'Correo electrónico': 'Email',
   Mensaje: 'Message',
   'Enviar mensaje': 'Send message',
+  'Quién soy, cómo trabajo y con qué construyo cada proyecto.':
+    'Who I am, how I work and what I build every project with.',
+  'Estas son las herramientas con las que trabajo y me relaciono a diario.':
+    'These are the tools I work with and use every day.',
+  Certificaciones: 'Certifications',
+  'Certificaciones que respaldan mi recorrido en desarrollo web, frontend, backend y bases de datos. Siempre en constante formación.':
+    'Certifications backing my path through web development, frontend, backend and databases. Always learning.',
+  certificados: 'certificates',
+  'horas certificadas': 'certified hours',
+  Enfoque: 'Approach',
+  'Claro, rápido y a tu medida.': 'Clear, fast and tailored to you.',
+  'Antes de escribir código, entiendo tu negocio y qué necesitás que haga tu sitio. Después priorizo una estructura clara, un diseño profesional en cualquier dispositivo y tiempos de carga cortos, para que tus clientes encuentren lo que buscan sin vueltas.':
+    'Before writing code, I learn about your business and what your site needs to do. Then I prioritize a clear structure, a professional design on any device and short load times, so your customers find what they need with no hassle.',
+  'Turnero y panel admin': 'Booking & admin panel',
+  'Calificación de Google animada': 'Animated Google rating',
+  'Catálogo de servicios con pestañas': 'Tabbed service catalog',
+  'Testimonios y mapa': 'Testimonials and map',
+  'Botón flotante de WhatsApp': 'Floating WhatsApp button',
+  'Reserva por servicio y horario': 'Booking by service and time',
+  'Disponibilidad en tiempo real': 'Real-time availability',
+  'Panel de administración con login': 'Admin panel with login',
+  'Confirmación por WhatsApp': 'Confirmation via WhatsApp',
+  'Catálogo por categorías': 'Catalog by category',
+  'Carrito de compras': 'Shopping cart',
+  'Checkout personalizado': 'Custom checkout',
+  'Confirmación por email': 'Email confirmation',
+  'Ingresos y egresos': 'Income and expenses',
+  'Filtros por categoría': 'Category filters',
+  'Edición de operaciones': 'Editable entries',
+  'Balance en tiempo real': 'Real-time balance',
+  Código: 'Code',
+  'Ver proyecto': 'View project',
+  'E-Commerce': 'E-Commerce',
+};
+
+// Placeholders de los campos del formulario: [ES, EN]
+const PLACEHOLDERS = {
+  n: ['Tu nombre', 'Your name'],
+  e: ['tu@email.com', 'you@email.com'],
+  m: ['Contame brevemente en qué puedo ayudarte…', 'Tell me briefly how I can help you…'],
 };

@@ -38,7 +38,9 @@ Sitio estático hecho con HTML, CSS y JavaScript puros (sin frameworks ni paso d
 │   ├── i18n.js           # Motor de traducción ES ↔ EN
 │   ├── menu.js, skills.js, certificates.js, services.js, ...  # Una función por archivo
 │   └── main.js           # Arranque (aplica tema e idioma guardados)
-├── assets/img/           # Imágenes (foto, capturas, certificados, favicon, CV)
+├── assets/
+│   ├── img/              # Imágenes (foto, capturas, certificados, favicon, CV)
+│   └── icons/            # Íconos SVG de las herramientas (Simple Icons, CC0)
 ├── robots.txt
 └── sitemap.xml
 ```
@@ -77,7 +79,8 @@ Si un certificado falta, simplemente se oculta de la galería.
 | Textos de las secciones (ES) | `index.html` |
 | Traducción al inglés de esos textos | `js/data/translations.js` |
 | Servicios (textos, duración, herramientas) | `js/data/services.js` |
-| Habilidades | `js/data/skills.js` |
+| Habilidades (en "Sobre mí") | `js/data/skills.js` |
+| Herramientas (carrusel con íconos) | `js/data/tools.js` + íconos en `assets/icons/` |
 | Certificados y su orden | `js/data/certificates.js` |
 | Frases que se escriben en el inicio | `js/config.js` |
 | Colores del tema | `css/variables.css` |

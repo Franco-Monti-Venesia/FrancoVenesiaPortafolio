@@ -61,7 +61,7 @@
     <link rel="stylesheet" href="css/sections/services.css" />
     <link rel="stylesheet" href="css/sections/methodology.css" />
     <link rel="stylesheet" href="css/sections/projects.css" />
-    <link rel="stylesheet" href="css/sections/skills.css" />
+    <link rel="stylesheet" href="css/sections/tools.css" />
     <link rel="stylesheet" href="css/sections/certificates.css" />
     <link rel="stylesheet" href="css/sections/contact.css" />
     <link rel="stylesheet" href="css/sections/footer.css" />
@@ -78,7 +78,7 @@
         <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#herramientas">Herramientas</a></li>
         <li><a href="#certificados">Certificados</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
@@ -143,9 +143,12 @@
 
       <section id="sobre-mi">
         <div class="wrap">
-          <div class="sec-h rv"><h2>Diseño y código con foco en resultados</h2></div>
-          <div class="about rv">
-            <div class="glass">
+          <div class="sec-h">
+            <h2 class="rv rv-l">Diseño y código con foco en resultados</h2>
+            <p class="sec-d rv rv-r">Quién soy, cómo trabajo y con qué construyo cada proyecto.</p>
+          </div>
+          <div class="about">
+            <div class="glass rv rv-l">
               <p>
                 Soy desarrollador Full Stack, detallista y apasionado por el diseño visual.
                 Transformo ideas en experiencias digitales rápidas, atractivas y fáciles de usar.
@@ -166,7 +169,7 @@
                 <li>Carrera de Desarrollo Full Stack · Coderhouse (2024–2026)</li>
               </ul>
             </div>
-            <div class="glass">
+            <div class="glass rv rv-r">
               <p>
                 Desde que empecé no paré de aprender y pulir mi oficio: frontend con React, backend
                 con Node y bases de datos SQL. Me adapto a lo que el proyecto necesite.
@@ -179,20 +182,54 @@
 
       <section id="servicios">
         <div class="wrap">
-          <div class="sec-h rv">
-            <h2>Servicios</h2>
-            <p>Todo lo que tu negocio necesita para tener presencia web, sin vueltas.</p>
+          <div class="sec-h">
+            <h2 class="rv rv-l">Servicios</h2>
+            <p class="sec-d rv rv-r">
+              Todo lo que tu negocio necesita para tener presencia web, sin vueltas.
+            </p>
           </div>
-          <div class="glass note rv">
+          <div class="glass note rv rv-d">
             <span class="ico">✨</span>
             <p>
               <b>100% personalizables.</b> Cada servicio se adapta a tu negocio, tu rubro y tu
               presupuesto. Si lo que necesitás no está acá, lo armamos juntos.
             </p>
           </div>
-          <div class="svc rv" id="svc">
-            <div class="tabs" id="tabs" role="tablist"></div>
-            <article class="glass pnl" id="pnl" role="tabpanel"></article>
+          <div class="svc" id="svc">
+            <div class="svc-left">
+              <div class="tabs rv rv-l" id="tabs" role="tablist"></div>
+              <div class="glass focus rv rv-l" style="--d: 0.1s">
+                <div class="focus-head">
+                  <span class="focus-ico"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="9" />
+                      <circle cx="12" cy="12" r="5" />
+                      <circle cx="12" cy="12" r="1.2" fill="currentColor" /></svg
+                  ></span>
+                  <div>
+                    <span class="focus-eye">Enfoque</span>
+                    <h4>Claro, rápido y a tu medida.</h4>
+                  </div>
+                </div>
+                <p>
+                  Antes de escribir código, entiendo tu negocio y qué necesitás que haga tu sitio.
+                  Después priorizo una estructura clara, un diseño profesional en cualquier
+                  dispositivo y tiempos de carga cortos, para que tus clientes encuentren lo que
+                  buscan sin vueltas.
+                </p>
+              </div>
+            </div>
+            <article class="glass pnl rv rv-r" id="pnl" role="tabpanel"></article>
           </div>
           <div class="meth">
             <div class="sec-h center rv">
@@ -314,124 +351,249 @@
 
       <section id="proyectos">
         <div class="wrap">
-          <div class="sec-h rv">
-            <h2>Proyectos</h2>
-            <p>Sitios reales y demos para negocios de salud y belleza.</p>
+          <div class="sec-h">
+            <h2 class="rv rv-l">Proyectos</h2>
+            <p class="sec-d rv rv-r">Sitios reales y demos para negocios de salud y belleza.</p>
           </div>
           <div class="projects">
-            <article class="glass proj rv">
-              <div class="th">
-                <img
-                  src="assets/img/Pasos de acero landing.png"
-                  alt="Landing de Pasos de Acero"
-                  onerror="this.remove()"
-                />Captura de la demo
+            <article class="glass proj rv rv-l">
+              <div class="pv">
+                <div class="pbar">
+                  <i></i><i></i><i></i><span>pasos-de-acero-demo-basica.vercel.app</span>
+                </div>
+                <div class="pshot">
+                  <img
+                    src="assets/img/Pasos de acero landing.png"
+                    alt="Landing de Pasos de Acero"
+                    onerror="this.remove()"
+                  />
+                </div>
               </div>
-              <div class="bd">
-                <span class="kind d">Demo</span>
-                <h3>Pasos de Acero · Landing</h3>
-                <p>
+              <div class="pbody">
+                <div class="ptop">
+                  <span class="peye">Demo</span><span class="pst"><i></i>Online</span>
+                </div>
+                <h3>Pasos de Acero</h3>
+                <p class="psub">Landing page</p>
+                <p class="pdesc">
                   Landing para un centro de estética: calificación de Google animada, catálogo de
                   servicios con pestañas, testimonios, mapa y botón flotante de WhatsApp.
                 </p>
+                <ul class="pfeat">
+                  <li>Calificación de Google animada</li>
+                  <li>Catálogo de servicios con pestañas</li>
+                  <li>Testimonios y mapa</li>
+                  <li>Botón flotante de WhatsApp</li>
+                </ul>
                 <div class="stack">
                   <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vercel</span>
                 </div>
-                <div class="plinks">
+                <div class="pbtns">
                   <a
+                    class="btn main"
                     href="https://pasos-de-acero-demo-basica.vercel.app"
                     target="_blank"
                     rel="noopener"
-                    >Ver demo</a
-                  >
+                    >Ver demo
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14M13 6l6 6-6 6" /></svg
+                  ></a>
                 </div>
               </div>
             </article>
-            <article class="glass proj rv">
-              <div class="th">
-                <img
-                  src="assets/img/Parrucchiere turnos.png"
-                  alt="Turnero de Parrucchiere"
-                  onerror="this.remove()"
-                />Captura de la demo
+            <article class="glass proj rv rv-r">
+              <div class="pv">
+                <div class="pbar">
+                  <i></i><i></i><i></i><span>parrucchiere-demo.vercel.app</span>
+                </div>
+                <div class="pshot">
+                  <img
+                    src="assets/img/Parrucchiere turnos.png"
+                    alt="Turnero de Parrucchiere"
+                    onerror="this.remove()"
+                  />
+                </div>
               </div>
-              <div class="bd">
-                <span class="kind d">Demo</span>
-                <h3>Parrucchiere · Turnero y panel admin</h3>
-                <p>
+              <div class="pbody">
+                <div class="ptop">
+                  <span class="peye">Demo</span><span class="pst"><i></i>Online</span>
+                </div>
+                <h3>Parrucchiere</h3>
+                <p class="psub">Turnero y panel admin</p>
+                <p class="pdesc">
                   Sistema de turnos con calendario, disponibilidad en tiempo real y panel de
                   administración para confirmar o rechazar reservas por WhatsApp.
                 </p>
+                <ul class="pfeat">
+                  <li>Reserva por servicio y horario</li>
+                  <li>Disponibilidad en tiempo real</li>
+                  <li>Panel de administración con login</li>
+                  <li>Confirmación por WhatsApp</li>
+                </ul>
                 <div class="stack">
                   <span>HTML</span><span>CSS</span><span>JavaScript</span><span>WhatsApp</span
                   ><span>Vercel</span>
                 </div>
-                <div class="plinks">
-                  <a href="https://parrucchiere-demo.vercel.app" target="_blank" rel="noopener"
-                    >Ver demo</a
-                  >
+                <div class="pbtns">
+                  <a
+                    class="btn main"
+                    href="https://parrucchiere-demo.vercel.app"
+                    target="_blank"
+                    rel="noopener"
+                    >Ver demo
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14M13 6l6 6-6 6" /></svg
+                  ></a>
                 </div>
               </div>
             </article>
-            <article class="glass proj rv">
-              <div class="th">
-                <img
-                  src="assets/img/e-commerce gerardino pastas.webp"
-                  alt="E-commerce Gerardino Pastas"
-                  onerror="this.remove()"
-                />E-commerce
+            <article class="glass proj rv rv-l">
+              <div class="pv">
+                <div class="pbar">
+                  <i></i><i></i><i></i><span>ecommercegerardinopastas.vercel.app</span>
+                </div>
+                <div class="pshot">
+                  <img
+                    src="assets/img/e-commerce gerardino pastas.webp"
+                    alt="E-commerce Gerardino Pastas"
+                    onerror="this.remove()"
+                  />
+                </div>
               </div>
-              <div class="bd">
-                <span class="kind">Proyecto de cursada</span>
+              <div class="pbody">
+                <div class="ptop">
+                  <span class="peye">Proyecto de cursada</span
+                  ><span class="pst"><i></i>Online</span>
+                </div>
                 <h3>E-commerce Gerardino Pastas</h3>
-                <p>
+                <p class="psub">E-Commerce</p>
+                <p class="pdesc">
                   Proyecto de cursada: tienda online de pastas artesanales (negocio ficticio) con
                   categorías, carrito, checkout personalizado y confirmación por email automático.
                 </p>
+                <ul class="pfeat">
+                  <li>Catálogo por categorías</li>
+                  <li>Carrito de compras</li>
+                  <li>Checkout personalizado</li>
+                  <li>Confirmación por email</li>
+                </ul>
                 <div class="stack">
                   <span>React</span><span>JavaScript</span><span>HTML</span><span>CSS</span
                   ><span>Firebase</span><span>Bootstrap</span>
                 </div>
-                <div class="plinks">
+                <div class="pbtns">
                   <a
-                    href="https://ecommercegerardinopastas.vercel.app/"
-                    target="_blank"
-                    rel="noopener"
-                    >Ver sitio</a
-                  ><a
+                    class="btn"
                     href="https://github.com/Franco-Monti-Venesia/E-commerce-Gerardino-Pastas.git"
                     target="_blank"
                     rel="noopener"
-                    >GitHub</a
-                  >
+                    ><svg
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      />
+                    </svg>
+                    Código</a
+                  ><a
+                    class="btn main"
+                    href="https://ecommercegerardinopastas.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Ver proyecto
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14M13 6l6 6-6 6" /></svg
+                  ></a>
                 </div>
               </div>
             </article>
-            <article class="glass proj rv">
-              <div class="th">
-                <img
-                  src="assets/img/gastos del mes.webp"
-                  alt="App de control de gastos"
-                  onerror="this.remove()"
-                />App web
+            <article class="glass proj rv rv-r">
+              <div class="pv">
+                <div class="pbar">
+                  <i></i><i></i><i></i><span>franco-monti-venesia.github.io</span>
+                </div>
+                <div class="pshot">
+                  <img
+                    src="assets/img/gastos del mes.webp"
+                    alt="App de control de gastos"
+                    onerror="this.remove()"
+                  />
+                </div>
               </div>
-              <div class="bd">
-                <span class="kind">Proyecto de cursada</span>
+              <div class="pbody">
+                <div class="ptop">
+                  <span class="peye">Proyecto de cursada</span
+                  ><span class="pst"><i></i>Online</span>
+                </div>
                 <h3>Control de gastos personales</h3>
-                <p>
+                <p class="psub">App web</p>
+                <p class="pdesc">
                   Proyecto de cursada: app para registrar ingresos y egresos, filtrar por categoría,
                   editar operaciones y ver el balance actualizado en tiempo real.
                 </p>
+                <ul class="pfeat">
+                  <li>Ingresos y egresos</li>
+                  <li>Filtros por categoría</li>
+                  <li>Edición de operaciones</li>
+                  <li>Balance en tiempo real</li>
+                </ul>
                 <div class="stack">
                   <span>JavaScript</span><span>HTML</span><span>CSS</span><span>Tailwind CSS</span>
                 </div>
-                <div class="plinks">
+                <div class="pbtns">
                   <a
+                    class="btn main"
                     href="https://franco-monti-venesia.github.io/Gastos-del-Mes-Proyecto/"
                     target="_blank"
                     rel="noopener"
-                    >Ver app</a
-                  >
+                    >Ver app
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14M13 6l6 6-6 6" /></svg
+                  ></a>
                 </div>
               </div>
             </article>
@@ -439,23 +601,40 @@
         </div>
       </section>
 
-      <section id="habilidades">
+      <section id="herramientas">
         <div class="wrap">
-          <div class="sec-h rv"><h2>Habilidades</h2></div>
-          <div class="marq rv"><div class="track" id="track"></div></div>
+          <div class="sec-h">
+            <h2 class="rv rv-l">Herramientas</h2>
+            <p class="sec-d rv rv-r">
+              Estas son las herramientas con las que trabajo y me relaciono a diario.
+            </p>
+          </div>
+          <div class="marq rv rv-z"><div class="track" id="toolsTrack"></div></div>
         </div>
       </section>
 
       <section id="certificados">
         <div class="wrap">
-          <div class="sec-h rv"><h2>Certificados</h2></div>
-          <div class="certs rv" id="certs"></div>
+          <div class="sec-h">
+            <h2 class="rv rv-l">Certificaciones</h2>
+            <div class="sec-d rv rv-r">
+              <p>
+                Certificaciones que respaldan mi recorrido en desarrollo web, frontend, backend y
+                bases de datos. Siempre en constante formación.
+              </p>
+              <div class="cstats">
+                <div><strong>10</strong> certificados</div>
+                <div><strong>440+</strong> horas certificadas</div>
+              </div>
+            </div>
+          </div>
+          <div class="certs rv rv-z" id="certs"></div>
         </div>
       </section>
 
       <section id="contacto">
         <div class="wrap contact">
-          <div class="rv">
+          <div class="rv rv-l">
             <h2>¿Tenés un proyecto en mente?</h2>
             <p>Contame sobre tu negocio y te respondo con una propuesta en 24 horas.</p>
             <div class="lks">
@@ -502,15 +681,36 @@
                     <path d="m5 12.5 4.5 4.5L19 7" /></svg
                 ></span>
               </button>
-              <a class="glass lk" href="https://github.com/Franco-Monti-Venesia" target="_blank" rel="noopener">
-                <span class="ic">
-                  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                </span>
-                <span><b>GitHub</b><small>@Franco-Monti-Venesia</small></span>
-                <span class="go">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
-                </span>
-              </a>
+              <a
+                class="glass lk"
+                href="https://github.com/Franco-Monti-Venesia"
+                target="_blank"
+                rel="noopener"
+                ><span class="ic"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="26"
+                    height="26"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                    /></svg></span
+                ><span><b>GitHub</b><small>@Franco-Monti-Venesia</small></span
+                ><span class="go"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 17 17 7M8 7h9v9" /></svg></span
+              ></a>
               <a
                 class="glass lk"
                 href="https://www.linkedin.com/in/franco-monti-venesia-fullstack/"
@@ -546,11 +746,17 @@
               ></a>
             </div>
           </div>
-          <form class="glass rv" id="form">
-            <label for="n">Nombre</label><input id="n" required autocomplete="name" />
+          <form class="glass rv rv-r" id="form">
+            <label for="n">Nombre</label
+            ><input id="n" required autocomplete="name" placeholder="Tu nombre" />
             <label for="e">Correo electrónico</label
-            ><input id="e" type="email" required autocomplete="email" />
-            <label for="m">Mensaje</label><textarea id="m" required></textarea>
+            ><input id="e" type="email" required autocomplete="email" placeholder="tu@email.com" />
+            <label for="m">Mensaje</label
+            ><textarea
+              id="m"
+              required
+              placeholder="Contame brevemente en qué puedo ayudarte…"
+            ></textarea>
             <input
               type="text"
               id="hp"
@@ -567,7 +773,22 @@
                 margin: 0;
               "
             />
-            <button class="btn main" type="submit">Enviar mensaje</button>
+            <button class="btn main send" type="submit">
+              Enviar mensaje
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </button>
             <p class="fstat" id="fstat" role="status" aria-live="polite"></p>
           </form>
         </div>
@@ -625,7 +846,7 @@
             <h4>Navegación</h4>
             <a href="#inicio">Inicio</a><a href="#sobre-mi">Sobre mí</a
             ><a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a
-            ><a href="#habilidades">Habilidades</a><a href="#certificados">Certificados</a
+            ><a href="#herramientas">Herramientas</a><a href="#certificados">Certificados</a
             ><a href="#contacto">Contacto</a>
           </nav>
           <div class="ft-col">
@@ -656,12 +877,14 @@
     <!-- Scripts (scripts clásicos con defer: se ejecutan en orden y comparten el ámbito global) -->
     <script defer src="js/config.js"></script>
     <script defer src="js/data/skills.js"></script>
+    <script defer src="js/data/tools.js"></script>
     <script defer src="js/data/certificates.js"></script>
     <script defer src="js/data/translations.js"></script>
     <script defer src="js/data/services.js"></script>
     <script defer src="js/i18n.js"></script>
     <script defer src="js/menu.js"></script>
     <script defer src="js/skills.js"></script>
+    <script defer src="js/tools.js"></script>
     <script defer src="js/certificates.js"></script>
     <script defer src="js/services.js"></script>
     <script defer src="js/theme-language.js"></script>
@@ -670,6 +893,7 @@
     <script defer src="js/tool-orbs.js"></script>
     <script defer src="js/contact.js"></script>
     <script defer src="js/ui-effects.js"></script>
+    <script defer src="js/smooth-scroll.js"></script>
     <script defer src="js/contact-form.js"></script>
     <script defer src="js/particles.js"></script>
     <script defer src="js/main.js"></script>

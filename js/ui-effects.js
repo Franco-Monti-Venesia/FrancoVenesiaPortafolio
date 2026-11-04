@@ -14,7 +14,8 @@ const io = new IntersectionObserver(
         io.unobserve(e.target);
       }
     }),
-  { threshold: 0.12 },
+  // aparecen cuando ya están bien adentro de la pantalla (el margen negativo las hace entrar más tarde)
+  { threshold: 0.12, rootMargin: '0px 0px -16% 0px' },
 );
 const obs = () => document.querySelectorAll('.rv:not(.in)').forEach((el) => io.observe(el));
 obs();

@@ -84,17 +84,28 @@ a {
 section {
   padding: 94px 0 30px;
 }
+/* Encabezado de sección: título a la izquierda y texto corto, más tenue, a la derecha */
 .sec-h {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px 48px;
   margin-bottom: 46px;
-  max-width: 620px;
 }
 .sec-h h2 {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 640px;
   font-size: clamp(2rem, 4.6vw, 3.2rem);
   font-weight: 800;
 }
-.sec-h p {
+.sec-d {
+  flex: 0 1 380px;
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  line-height: 1.6;
   color: var(--mut);
-  margin-top: 14px;
+  opacity: 0.85;
 }
 .glass {
   background: var(--glass);
@@ -128,22 +139,63 @@ h1 {
 }
 .rv {
   opacity: 0;
-  transform: translateY(26px);
+  transform: translateY(80px);
   transition:
-    opacity 0.8s,
-    transform 0.8s;
+    opacity 0.5s ease,
+    transform 0.8s cubic-bezier(0.2, 1.25, 0.35, 1);
+  transition-delay: var(--d, 0s);
+}
+/* Variantes de entrada: desde la izquierda, la derecha, arriba o con zoom */
+.rv-l {
+  transform: translateX(-130px);
+}
+.rv-r {
+  transform: translateX(130px);
+}
+.rv-d {
+  transform: translateY(-80px);
+}
+.rv-z {
+  transform: scale(0.78);
 }
 .rv.in {
   opacity: 1;
   transform: none;
 }
 .rv.l {
-  transform: translateX(-34px);
+  transform: translateX(-100px);
 }
 .rv.r {
-  transform: translateX(34px);
+  transform: translateX(100px);
 }
 .rv.l.in,
 .rv.r.in {
   transform: none;
+}
+
+/* Barra de scroll con los colores de la página */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--v) var(--bg);
+}
+@supports selector(::-webkit-scrollbar) {
+  html {
+    scrollbar-width: auto;
+    scrollbar-color: auto;
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--v), var(--c));
+    border: 3px solid var(--bg);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--c), var(--p));
+  }
 }

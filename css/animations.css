@@ -30,3 +30,23 @@
     transform: translateY(10px);
   }
 }
+@keyframes zin {
+  from {
+    transform: scale(0.86);
+    opacity: 0.4;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes chipin {
+  from {
+    transform: translateY(16px) scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}

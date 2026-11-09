@@ -65,7 +65,7 @@ npx serve .
 | `favicon-PortafolioFranco.png` | Favicon |
 | `og-portafolio.jpg` | Vista previa al compartir (1200×630, incluida) |
 | `FrancoVenesia_CV.pdf` | Botón "Descargar CV" |
-| `Pasos de acero landing.png`, `Parrucchiere turnos.png` | Capturas de las demos |
+| `natura-and-pasta.webp`, `Parrucchiere turnos.png` | Capturas de los proyectos reales y demos |
 | `e-commerce gerardino pastas.webp`, `gastos del mes.webp` | Capturas de los proyectos de cursada |
 | `Carrera Full Stack.png`, `Carrera Backend.png`, `CertificadoCarrera de Desarrollo Frontend React.webp`, `CertificadoReactJS.webp`, `CertificadoJavaScript.webp`, `Certificado de SQL.png`, `Certificado de Backend III.png`, `Certificado de Backend II.png`, `Certificado de Backend I.png`, `CertificadoDesarrolloWeb.webp` | Certificados |
 

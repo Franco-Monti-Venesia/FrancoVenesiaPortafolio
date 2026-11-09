@@ -137,6 +137,21 @@ const EN = {
   Código: 'Code',
   'Ver proyecto': 'View project',
   'E-Commerce': 'E-Commerce',
+  'Proyecto real': 'Real project',
+  'Landing Page · Sitio web institucional': 'Landing page · Institutional website',
+  'Desarrollo de una web de presentación para una marca de pastas artesanales, enfocada en destacar sus productos elaborados con harina de almendras e integral, transmitir su identidad y facilitar el contacto con potenciales clientes.':
+    'Development of a presentation website for an artisanal pasta brand, focused on showcasing its almond and whole-wheat flour products, conveying its identity and making it easy for potential customers to get in touch.',
+  'Diseño responsive para desktop, tablets y móviles':
+    'Responsive design for desktop, tablets and mobile',
+  'Catálogo visual de productos': 'Visual product catalog',
+  'Integración con WhatsApp para consultas y pedidos':
+    'WhatsApp integration for inquiries and orders',
+  'Ubicación interactiva y datos de contacto': 'Interactive location and contact details',
+  'Galería de publicaciones de Instagram': 'Instagram posts gallery',
+  'Animaciones e interacciones al navegar': 'Animations and interactions while browsing',
+  'Visitar sitio': 'Visit site',
+  'Diseño y desarrollo de experiencias web para marcas y negocios que buscan crecer de forma digital.':
+    'Design and development of web experiences for brands and businesses looking to grow digitally.',
 };
 
 // Placeholders de los campos del formulario: [ES, EN]

@@ -10,16 +10,26 @@
 .proj:nth-child(even) {
   grid-template-columns: 1fr 1.2fr;
 }
+.pv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px;
+  background: radial-gradient(ellipse at 30% 20%, rgba(139, 108, 255, 0.25), transparent 60%),
+    #06101c;
+  border-right: 1px solid var(--line);
+}
 .proj:nth-child(even) .pv {
   order: 2;
   border-right: 0;
   border-left: 1px solid var(--line);
 }
-.pv {
-  display: flex;
-  flex-direction: column;
-  background: #06101c;
-  border-right: 1px solid var(--line);
+/* Marco de navegador que flota dentro del panel: la captura se ve completa sin importar su proporción */
+.pframe {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
 }
 .pbar {
   display: flex;
@@ -50,8 +60,7 @@
 }
 .pshot {
   position: relative;
-  flex: 1;
-  min-height: 280px;
+  aspect-ratio: 16 / 10;
   overflow: hidden;
   background: linear-gradient(135deg, #1b1442, #0d3447);
 }

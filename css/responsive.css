@@ -76,7 +76,8 @@
   .pnl {
     order: 2;
   }
-  .focus {
+  .focus,
+  .trial {
     order: 3;
   }
   .sec-h {
@@ -157,7 +158,15 @@
     grid-template-columns: 1fr;
   }
   .type {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
+  }
+  .note {
+    flex-wrap: wrap;
+  }
+  .note .btn {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
   }
   .sec-h {
     margin-bottom: 32px;

@@ -223,3 +223,29 @@
   line-height: 1.65;
   color: var(--mut);
 }
+/* Títulos grandes de "Webs a medida" y "Sistemas a medida" */
+.sec-h.big h2 {
+  font-size: clamp(2.6rem, 6.4vw, 4.9rem);
+  line-height: 1;
+}
+/* Aviso de asesoramiento con botón */
+.note .btn {
+  flex: none;
+  margin-left: auto;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+}
+/* Sistemas: panel de información a la izquierda y los 3 niveles a la derecha */
+.svc-rev {
+  grid-template-columns: 1.5fr 0.85fr;
+}
+.trial {
+  width: 100%;
+  justify-content: center;
+  padding: 15px 16px;
+  border-radius: 14px;
+}
+#metodologia .meth {
+  margin-top: 0;
+}

@@ -26,13 +26,19 @@ const LG = document.getElementById('lg'),
   TH = document.getElementById('th');
 const WD = {
   es: [
+    'Landings rápidas y a medida.',
     'Sitios web para negocios locales.',
     'E-commerce con React y Firebase.',
-    'Landings rápidas y a medida.',
+    'Sistemas a medida.',
   ],
   en: [
+    'Fast, custom landing pages.',
     'Websites for local businesses.',
     'E-commerce with React and Firebase.',
-    'Fast, custom landing pages.',
+    'Custom systems.',
   ],
 };
+
+// WhatsApp al que llegan las consultas (código de país + número, sin + ni espacios)
+const WHATSAPP = '5493467440655';
+const waLink = (text) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`;

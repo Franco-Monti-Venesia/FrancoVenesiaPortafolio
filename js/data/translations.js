@@ -152,6 +152,18 @@ const EN = {
   'Visitar sitio': 'Visit site',
   'Diseño y desarrollo de experiencias web para marcas y negocios que buscan crecer de forma digital.':
     'Design and development of web experiences for brands and businesses looking to grow digitally.',
+  'Desarrollador Full Stack.': 'Full Stack Developer.',
+  'Solicitar asesoramiento': 'Request advice',
+  'Webs a medida': 'Custom websites',
+  'Sistemas a medida': 'Custom systems',
+  'Elegí el tipo de web que tu negocio necesita. Todas se adaptan a tu rubro y a tu presupuesto.':
+    'Choose the type of website your business needs. All of them adapt to your industry and budget.',
+  '¿No sabés cuál te conviene?': 'Not sure which one fits you?',
+  'Te asesoro sin compromiso y armamos juntos la mejor opción para tu negocio.':
+    'I will advise you at no cost and together we will find the best option for your business.',
+  'Probalo 30 días gratis con los datos reales de tu negocio. Si te sirve, seguís con una licencia mensual con soporte.':
+    'Try it free for 30 days with your real business data. If it works for you, continue with a monthly license with support.',
+  'Probar 30 días gratis': 'Try it free for 30 days',
 };
 
 // Placeholders de los campos del formulario: [ES, EN]

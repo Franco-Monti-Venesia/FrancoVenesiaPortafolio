@@ -42,15 +42,18 @@ function setLang(l) {
   ch = 0;
   del = false;
   document.getElementById('gh').textContent =
-    (l === 'es' ? 'Desarrollador Full Stack en Rosario. ' : 'Full Stack Developer in Rosario. ') +
+    (l === 'es' ? 'Desarrollador Full Stack. ' : 'Full Stack Developer. ') +
     WD[l].reduce((a, b) => (a.length >= b.length ? a : b));
   tr(document.body);
   Object.entries(PLACEHOLDERS).forEach(([id, p]) => {
     document.getElementById(id).placeholder = p[l === 'es' ? 0 : 1];
   });
   renderSkills();
-  renderTabs();
-  renderPnl();
+  renderServices();
+  // botones con data-wa: abren WhatsApp con el mensaje en el idioma actual
+  document.querySelectorAll('[data-wa]').forEach((a) => {
+    a.href = waLink(l === 'es' ? a.dataset.wa : a.dataset.waEn);
+  });
   renderCerts();
   document.title =
     l === 'es'
